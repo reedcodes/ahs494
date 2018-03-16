@@ -1,1 +1,57 @@
-/* This is where your CSS style definitions should be placed. */
+/* line 1, ../scss/base/_global.scss */
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* line 1, ../scss/base/_typography.scss */
+body {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* line 6, ../scss/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-bottom: 1rem;
+}
+
+/* line 18, ../scss/base/_typography.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 22, ../scss/base/_typography.scss */
+h2 {
+  font-size: 1.75rem;
+}
+
+/* line 26, ../scss/base/_typography.scss */
+p {
+  font-size: 1rem;
+}
+
+/* line 1, ../scss/component/_table.scss */
+table,
+th,
+td {
+  border: 1px solid #000;
+}
+
+/* line 7, ../scss/component/_table.scss */
+table {
+  margin-bottom: 1rem;
+}
+
+/* line 11, ../scss/component/_table.scss */
+th,
+td {
+  padding: 0.5rem 1rem;
+}
