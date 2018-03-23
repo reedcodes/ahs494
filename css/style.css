@@ -4,38 +4,186 @@ body {
   color: #000;
 }
 
-/* line 1, ../scss/base/_typography.scss */
-body {
-  font-size: 1rem;
-  line-height: 1.4;
+/* line 8, ../scss/base/_global.scss */
+img {
+  max-width: 100%;
 }
 
-/* line 6, ../scss/base/_typography.scss */
+/* line 14, ../scss/base/_global.scss */
+a {
+  display: inline-block;
+  -moz-transition: all, 0.3s, ease;
+  -o-transition: all, 0.3s, ease;
+  -webkit-transition: all, 0.3s, ease;
+  transition: all, 0.3s, ease;
+  border-bottom: 0.125rem solid #53777a;
+  color: #53777a;
+  line-height: 0.875;
+  text-decoration: none;
+}
+/* line 23, ../scss/base/_global.scss */
+a:hover, a:focus {
+  background: #e6e6e6;
+}
+
+/**
+  * global typography
+  */
+/* line 5, ../scss/base/_typography.scss */
+html, body {
+  font-size: 125%;
+  line-height: 1.4;
+  font-family: 'Heebo', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+/**
+  * headings
+  */
+/* line 17, ../scss/base/_typography.scss */
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
+h4 {
+  font-family: 'Lora', 'Georgia', 'Times New Roman', serif;
+}
+
+/* line 24, ../scss/base/_typography.scss */
+h2,
+h3,
+h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 31, ../scss/base/_typography.scss */
+h1 {
+  font-size: 2.369rem;
+  line-height: 1.182;
+}
+
+/* line 32, ../scss/base/_typography.scss */
+h2 {
+  font-size: 1.777rem;
+  line-height: 1.576;
+}
+
+/* line 33, ../scss/base/_typography.scss */
+h3 {
+  font-size: 1.333rem;
+  line-height: 1.05;
+}
+
+/* line 34, ../scss/base/_typography.scss */
+h4 {
+  font-size: 1rem;
+}
+
+/**
+  * text blocks
+  */
+/* line 42, ../scss/base/_typography.scss */
 p,
+ol,
 ul,
-ol {
+table {
   margin-bottom: 1rem;
 }
 
-/* line 18, ../scss/base/_typography.scss */
-h1 {
-  font-size: 2rem;
-}
-
-/* line 22, ../scss/base/_typography.scss */
-h2 {
-  font-size: 1.75rem;
-}
-
-/* line 26, ../scss/base/_typography.scss */
-p {
+/* line 49, ../scss/base/_typography.scss */
+p,
+li,
+th,
+td {
   font-size: 1rem;
+}
+
+/* line 1, ../scss/layout/_page.scss */
+.container {
+  overflow: auto;
+  max-width: 1140px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+/**
+  * header
+  */
+/* line 7, ../scss/layout/_header.scss */
+header * {
+  margin: 0;
+  line-height: 1;
+}
+/* line 12, ../scss/layout/_header.scss */
+header .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 17, ../scss/layout/_header.scss */
+header .logo {
+  margin-right: 1rem;
+}
+
+/**
+  * nav
+  */
+/* line 5, ../scss/layout/_nav.scss */
+nav {
+  background: #f6e8bc;
+}
+/* line 9, ../scss/layout/_nav.scss */
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/**
+  * main
+  */
+/* line 5, ../scss/layout/_main.scss */
+main {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+/* line 9, ../scss/layout/_main.scss */
+main .container *:first-child {
+  margin-top: 0;
+}
+
+/**
+  * footer
+  */
+/* line 5, ../scss/layout/_footer.scss */
+footer {
+  padding-top: 1rem;
+  background: #f6e8bc;
+}
+/* line 10, ../scss/layout/_footer.scss */
+footer ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+/* line 1, ../scss/component/_image.scss */
+.profile {
+  display: block;
+  max-width: 250px;
+  margin: 2.5rem auto 1rem auto;
+  border: 5px solid #000;
+  border-radius: 50%;
 }
 
 /* line 1, ../scss/component/_table.scss */
@@ -54,4 +202,14 @@ table {
 th,
 td {
   padding: 0.5rem 1rem;
+}
+
+/* line 16, ../scss/component/_table.scss */
+th {
+  background: #cccccc;
+}
+
+/* line 20, ../scss/component/_table.scss */
+td {
+  background: #fff;
 }

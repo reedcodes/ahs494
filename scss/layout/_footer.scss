@@ -1,0 +1,18 @@
+/**
+  * footer
+  */
+
+footer {
+
+  padding-top: 1rem;
+  background: tint($yellow, 50%);
+
+  ul {
+    @include display-flex;
+    @include justify-content(space-around);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+  }
+
+}

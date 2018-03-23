@@ -9,5 +9,13 @@
 @import 'base/global';
 @import 'base/typography';
 
+// Layout
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/main';
+@import 'layout/footer';
+
 // Component
+@import 'component/image';
 @import 'component/table';

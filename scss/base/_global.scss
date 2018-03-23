@@ -2,3 +2,27 @@ body {
   background: $white;
   color: $black;
 }
+
+
+
+img {
+  max-width: 100%;
+}
+
+
+
+a {
+
+  display: inline-block;
+  @include transition(all, 0.3s, ease);
+  border-bottom: 0.125rem solid $green;
+  color: $green;
+  line-height: 0.875;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background: tint($black, 90%);
+  }
+
+}

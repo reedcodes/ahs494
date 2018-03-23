@@ -1,0 +1,22 @@
+/**
+  * header
+  */
+
+header {
+
+  * {
+    margin: 0;
+    line-height: 1;
+  }
+
+  .container {
+    @include display-flex;
+    @include align-items(center);
+  }
+
+  .logo {
+    margin-right: 1rem;
+  }
+
+
+}

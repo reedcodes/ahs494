@@ -1,0 +1,13 @@
+/**
+  * main
+  */
+
+main {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+
+  .container *:first-child {
+    margin-top: 0;
+  }
+
+}
