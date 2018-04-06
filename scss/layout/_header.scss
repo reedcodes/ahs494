@@ -9,6 +9,8 @@ header {
     line-height: 1;
   }
 
+  color: $red;
+
   .container {
     @include display-flex;
     @include align-items(center);

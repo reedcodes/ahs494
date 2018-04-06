@@ -1,7 +1,7 @@
 table,
 th,
 td {
-  border: 1px solid $black;
+  border: 1px solid $blue;
 }
 
 table {
@@ -14,9 +14,12 @@ td {
 }
 
 th {
-  background: tint($black, 80%);
+  background: tint($blue, 80%);
 }
 
 td {
   background: $white;
+}
+tr:nth-of-type(even) td {
+  background: tint($blue, 90%);
 }

@@ -4,14 +4,20 @@
 
 nav {
 
-  background: tint($yellow, 50%);
+  background: $blue;
+  color: $white;
+
+  a {
+    @extend %link-light;
+  }
 
   ul {
-    @include display-flex;
-    @include justify-content(space-around);
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    list-style: none;
+    @extend %nav-bar;
+
+    a {
+      @extend %nav-button;
+    }
+
   }
 
 }

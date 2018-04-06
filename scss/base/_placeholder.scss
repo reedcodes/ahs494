@@ -1,0 +1,50 @@
+%link {
+  display: inline-block;
+  @include transition(all, 0.3s, ease);
+  border-bottom: 0.1rem solid $blue;
+  color: $blue;
+  line-height: 1;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    border-bottom-width: 0.2rem;
+    border-bottom-color: $red;
+    background: tint($black, 95%);
+    color: $red;
+  }
+}
+
+%link-light {
+  border-bottom-color: $yellow;
+  color: $yellow;
+  &:hover,
+  &:focus {
+    border-bottom-color: $white;
+    background-color: inherit;
+    color: $white;
+  }
+}
+
+
+
+%nav-bar {
+  @include display-flex;
+  @include justify-content(space-around);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+%nav-button {
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid transparent;
+  border-style: solid;
+  &:hover,
+  &:focus {
+    border: 0.1rem solid $white;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: $white;
+  }
+}
