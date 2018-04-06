@@ -228,19 +228,26 @@ table {
 th,
 td {
   padding: 0.5rem 1rem;
+  text-align: left;
 }
 
-/* line 16, ../scss/component/_table.scss */
+/* line 17, ../scss/component/_table.scss */
 th {
-  background: #ccd2d9;
+  font-weight: bold;
 }
 
-/* line 20, ../scss/component/_table.scss */
-td {
+/* line 21, ../scss/component/_table.scss */
+thead th {
+  background: #ff851b;
+  font-size: 1.33rem;
+}
+
+/* line 26, ../scss/component/_table.scss */
+tr {
   background: #fff;
 }
 
-/* line 23, ../scss/component/_table.scss */
-tr:nth-of-type(even) td {
-  background: #e6e9ec;
+/* line 29, ../scss/component/_table.scss */
+tr:nth-of-type(even) {
+  background: #fff3e8;
 }

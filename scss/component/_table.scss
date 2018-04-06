@@ -11,15 +11,21 @@ table {
 th,
 td {
   padding: 0.5rem 1rem;
+  text-align: left;
 }
 
 th {
-  background: tint($blue, 80%);
+  font-weight: bold;
 }
 
-td {
+thead th {
+  background: $orange;
+  font-size: 1.33rem;
+}
+
+tr {
   background: $white;
 }
-tr:nth-of-type(even) td {
-  background: tint($blue, 90%);
+tr:nth-of-type(even) {
+  background: tint($orange, 90%);
 }
