@@ -44,7 +44,7 @@
   &:focus {
     border: 0.1rem solid $white;
     border-radius: 0.5rem;
-    background: transparent;
+    background: $red;
     color: $white;
   }
 }

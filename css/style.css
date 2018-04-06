@@ -51,7 +51,7 @@ nav ul a, footer ul a {
 nav ul a:hover, footer ul a:hover, nav ul a:focus, footer ul a:focus {
   border: 0.1rem solid #fff;
   border-radius: 0.5rem;
-  background: transparent;
+  background: #5c0819;
   color: #fff;
 }
 
@@ -64,6 +64,20 @@ body {
 /* line 8, ../scss/base/_global.scss */
 img {
   max-width: 100%;
+}
+
+/* line 22, ../scss/base/_global.scss */
+.pull-left {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* line 23, ../scss/base/_global.scss */
+.pull-right {
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 /**
@@ -199,17 +213,18 @@ main .container *:first-child {
 /* line 5, ../scss/layout/_footer.scss */
 footer {
   padding-top: 1rem;
-  background: #5c0819;
+  background: #001f3f;
   color: #fff;
 }
 
 /* line 1, ../scss/component/_image.scss */
 .profile {
   display: block;
-  max-width: 250px;
+  max-width: 12rem;
   margin: 2.5rem auto 1rem auto;
-  border: 5px solid #000;
+  border: 5px solid #001f3f;
   border-radius: 50%;
+  background: #ffdc00;
 }
 
 /* line 1, ../scss/component/_table.scss */
