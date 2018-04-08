@@ -59,6 +59,8 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
 #main-menu .main-menu, footer ul {
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-justify-content: flex-start;
@@ -66,13 +68,27 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
   padding-left: 0;
   list-style: none;
 }
-/* line 68, ../scss/base/_placeholder.scss */
+@media (min-width: 576px) {
+  /* line 60, ../scss/base/_placeholder.scss */
+  #main-menu .main-menu, footer ul {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+/* line 73, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li, footer ul li {
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
-/* line 70, ../scss/base/_placeholder.scss */
+/* line 76, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li:last-child, footer ul li:last-child {
   margin-right: 0;
+}
+@media (min-width: 576px) {
+  /* line 73, ../scss/base/_placeholder.scss */
+  #main-menu .main-menu li, footer ul li {
+    margin-bottom: 0;
+  }
 }
 
 /* line 1, ../scss/base/_global.scss */

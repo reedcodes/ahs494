@@ -60,15 +60,25 @@
 %nav-bar {
 
   @include display-flex;
+  @include flex-direction(column);
   @include flex-wrap(wrap);
   @include justify-content(flex-start);
   padding-left: 0;
   list-style: none;
 
+  @include breakpoint($sm) {
+    @include flex-direction(row);
+  }
+
   li {
     margin-right: 1rem;
+    margin-bottom: 0.5rem;
     &:last-child {
       margin-right: 0;
+    }
+
+    @include breakpoint($sm) {
+      margin-bottom: 0;
     }
   }
 
