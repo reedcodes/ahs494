@@ -4,7 +4,6 @@
 
 nav {
 
-  margin-bottom: 2.5rem;
   background: $blue;
   color: $white;
 
@@ -12,11 +11,80 @@ nav {
     @extend %link-light;
   }
 
-  ul {
+}
+
+
+
+/**
+  * main nav
+  */
+
+#main-menu {
+
+  .main-menu {
     @extend %nav-bar;
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
 
     a {
-      @extend %nav-button;
+      @extend %button;
+    }
+
+  }
+
+  @include breakpoint($md) {
+    .main-menu {
+      @include display-flex;
+    }
+    .btn-menu {
+      display: none;
+    }
+  }
+
+}
+
+
+
+/**
+  * mobile nav
+  */
+
+#mobile-menu {
+
+  display: inherit;
+  clear: both;
+  margin-top: 25rem;
+  padding-bottom: 25rem;
+
+  @include breakpoint($md) {
+    display: none;
+  }
+
+}
+
+.mobile-menu {
+
+  margin-top: 2.5rem;
+  margin-right: -1.25rem;
+  margin-left: -1.25rem;
+  padding-left: 0;
+  border-top: 0.125rem solid $yellow;
+  list-style: none;
+
+  li {
+    border-bottom: 0.125rem solid $yellow;
+  }
+
+  a {
+
+    display: block;
+    padding: 0.75rem 1.25rem;
+    border: 0;
+
+    &:hover,
+    &:focus {
+      background-color: $red;
     }
 
   }

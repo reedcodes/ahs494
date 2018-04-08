@@ -5,6 +5,7 @@
 @import 'compass/css3';
 
 // Base
+@import 'base/breakpoints';
 @import 'base/color';
 @import 'base/placeholder';
 @import 'base/global';
@@ -18,5 +19,6 @@
 @import 'layout/footer';
 
 // Component
+@import 'component/button';
 @import 'component/image';
 @import 'component/table';

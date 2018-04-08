@@ -32,9 +32,10 @@
   </div>
 </header>
 
-<nav role="navigation">
+<nav id="main-menu" role="navigation" aria-label="Main menu navigation">
   <div class="container">
-    <ul>
+  <a class="btn btn-menu" href="#mobile-menu"><span class="fas fa-bars"></span> Menu Navigation</a>
+    <ul class="main-menu">
       <li><a href="index.html"><span class="fas fa-fw fa-home"></span> Home</a></li>
       <li><a href="about.html"><span class="fas fa-fw fa-user"></span> About Reed</a></li>
       <li><a href="services.html"><span class="fas fa-fw fa-clipboard-list"></span> Services &amp; Rates</a></li>
@@ -83,6 +84,18 @@
     <p>This website is created as the final project for <a href="http://iadp.ahs.illinois.edu">Information Accessibility Design and Policy</a> through the University of Illinois.</p>
   </div>
 </footer>
+
+<nav id="mobile-menu" role="navigation" aria-label="Mobile menu navigation">
+  <div class="container">
+    <a class="btn btn-close" href="#main" aria-label="Close menu and return to main content">Close <span class="fas fa-window-close"></span></a>
+    <ul class="mobile-menu">
+      <li><a href="index.html"><span class="fas fa-fw fa-home"></span> Home</a></li>
+      <li><a href="about.html"><span class="fas fa-fw fa-user"></span> About Reed</a></li>
+      <li><a href="services.html"><span class="fas fa-fw fa-clipboard-list"></span> Services &amp; Rates</a></li>
+      <li><a href="contact.html"><span class="fas fa-fw fa-comment"></span> Contact Info</a></li>
+    </ul>
+  </div>
+</nav>
 
 
 

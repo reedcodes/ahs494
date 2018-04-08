@@ -13,10 +13,11 @@ footer {
   }
 
   ul {
+
     @extend %nav-bar;
 
     a {
-      @extend %nav-button;
+      @extend %button;
     }
 
   }
