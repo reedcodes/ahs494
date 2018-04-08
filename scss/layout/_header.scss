@@ -11,14 +11,21 @@ header {
 
   color: $red;
 
-  .container {
-    @include display-flex;
-    @include align-items(center);
-  }
-
   .logo {
-    margin-right: 1rem;
+    overflow: auto;
+    @include display-flex;
+    @inlcude flex-wrap(wrap);
+    @include align-items(flex-start);
+    border-bottom: 0.25rem solid $red;
   }
-
+  .logo-img {
+    float: left;
+    font-size: 2rem;
+  }
+  .logo-text {
+    padding-top: 0.4rem;
+    padding-left: 0.2rem;
+    font-size: 1.25rem;
+  }
 
 }
