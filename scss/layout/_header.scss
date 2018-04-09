@@ -16,6 +16,7 @@ header {
     @include display-flex;
     @include flex-wrap(wrap);
     @include align-items(flex-start);
+    margin-bottom: 0.75rem;
     border-bottom: 0.25rem solid $red;
   }
   .logo-img {

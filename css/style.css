@@ -155,20 +155,20 @@ h4 {
 
 /* line 31, ../scss/base/_typography.scss */
 h1 {
-  font-size: 2.369rem;
-  line-height: 1.182;
+  font-size: 1.728rem;
+  line-height: 1.62;
 }
 
 /* line 32, ../scss/base/_typography.scss */
 h2 {
-  font-size: 1.777rem;
-  line-height: 1.576;
+  font-size: 1.44rem;
+  line-height: 1;
 }
 
 /* line 33, ../scss/base/_typography.scss */
 h3 {
-  font-size: 1.333rem;
-  line-height: 1.05;
+  font-size: 1.2rem;
+  line-height: 1.1667;
 }
 
 /* line 34, ../scss/base/_typography.scss */
@@ -176,10 +176,29 @@ h4 {
   font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+  /* line 37, ../scss/base/_typography.scss */
+  h1 {
+    font-size: 2.369rem;
+    line-height: 1.182;
+  }
+
+  /* line 38, ../scss/base/_typography.scss */
+  h2 {
+    font-size: 1.777rem;
+    line-height: 1.576;
+  }
+
+  /* line 39, ../scss/base/_typography.scss */
+  h3 {
+    font-size: 1.333rem;
+    line-height: 1.05;
+  }
+}
 /**
   * text blocks
   */
-/* line 42, ../scss/base/_typography.scss */
+/* line 48, ../scss/base/_typography.scss */
 p,
 ol,
 ul,
@@ -187,7 +206,7 @@ table {
   margin-bottom: 1rem;
 }
 
-/* line 49, ../scss/base/_typography.scss */
+/* line 55, ../scss/base/_typography.scss */
 p,
 li,
 th,
@@ -241,14 +260,15 @@ header .logo {
   flex-wrap: wrap;
   -webkit-align-items: flex-start;
   align-items: flex-start;
+  margin-bottom: 0.75rem;
   border-bottom: 0.25rem solid #5c0819;
 }
-/* line 21, ../scss/layout/_header.scss */
+/* line 22, ../scss/layout/_header.scss */
 header .logo-img {
   float: left;
   font-size: 2rem;
 }
-/* line 25, ../scss/layout/_header.scss */
+/* line 26, ../scss/layout/_header.scss */
 header .logo-text {
   padding-top: 0.4rem;
   padding-left: 0.2rem;
