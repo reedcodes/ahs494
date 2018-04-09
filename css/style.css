@@ -195,6 +195,23 @@ td {
   font-size: 1rem;
 }
 
+/**
+  * visually hidden
+  * https://a11yproject.com/posts/how-to-hide-content/
+  */
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 15, ../scss/base/_utility.scss */
+  .rates thead {
+    position: absolute !important;
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+}
+
 /* line 1, ../scss/layout/_page.scss */
 .container {
   overflow: auto;
@@ -389,4 +406,23 @@ tr {
 /* line 29, ../scss/component/_table.scss */
 tr:nth-of-type(even) {
   background: #fff3e8;
+}
+
+/**
+  * Rates table
+  */
+@media (min-width: 0) and (max-width: 768px) {
+  /* line 47, ../scss/component/_table.scss */
+  .rates th,
+  .rates td {
+    display: block;
+  }
+  /* line 50, ../scss/component/_table.scss */
+  .rates th::before,
+  .rates td::before {
+    content: attr(data-label);
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+  }
 }

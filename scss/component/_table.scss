@@ -29,3 +29,32 @@ tr {
 tr:nth-of-type(even) {
   background: tint($orange, 90%);
 }
+
+
+
+/**
+  * Rates table
+  */
+
+.rates {
+
+  thead {
+    @extend %sr-mobile;
+  }
+
+  @include breakpoint($xs $md) {
+
+    th,
+    td {
+      display: block;
+      &::before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+
+  }
+
+}
