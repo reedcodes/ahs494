@@ -215,11 +215,40 @@ td {
 }
 
 /**
+  * skip links
+  */
+/* line 5, ../scss/base/_utility.scss */
+.btn-skip {
+  z-index: 1;
+}
+/* line 9, ../scss/base/_utility.scss */
+.btn-skip:hover, .btn-skip:focus {
+  width: auto;
+  height: auto;
+  clip: auto;
+  border: 0.25rem solid #001f3f;
+  background: #ff851b;
+  color: #001f3f;
+  font-size: 2rem;
+}
+
+/**
   * visually hidden
   * https://a11yproject.com/posts/how-to-hide-content/
   */
+/* line 29, ../scss/base/_utility.scss */
+.btn-skip {
+  position: absolute !important;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 15, ../scss/base/_utility.scss */
+  /* line 38, ../scss/base/_utility.scss */
   .rates thead {
     position: absolute !important;
     overflow: hidden;

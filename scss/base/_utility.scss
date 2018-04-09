@@ -1,4 +1,27 @@
 /**
+  * skip links
+  */
+
+.btn-skip {
+
+  @extend %sr-only;
+  z-index: 1;
+  &:hover,
+  &:focus {
+    width: auto;
+    height: auto;
+    clip: auto;
+    border: 0.25rem solid $blue;
+    background: $orange;
+    color: $blue;
+    font-size: 2rem;
+  }
+
+}
+
+
+
+/**
   * visually hidden
   * https://a11yproject.com/posts/how-to-hide-content/
   */
