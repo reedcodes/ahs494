@@ -220,7 +220,8 @@ header .logo {
   overflow: auto;
   display: -webkit-flex;
   display: flex;
-  @inlcude flex-wrap(wrap);
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-align-items: flex-start;
   align-items: flex-start;
   border-bottom: 0.25rem solid #5c0819;

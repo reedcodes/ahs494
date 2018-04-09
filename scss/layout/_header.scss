@@ -14,7 +14,7 @@ header {
   .logo {
     overflow: auto;
     @include display-flex;
-    @inlcude flex-wrap(wrap);
+    @include flex-wrap(wrap);
     @include align-items(flex-start);
     border-bottom: 0.25rem solid $red;
   }
