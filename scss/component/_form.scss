@@ -1,0 +1,39 @@
+label,
+input,
+textarea {
+  display: block;
+}
+
+button,
+input,
+textarea {
+
+  max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid $green;
+  background: tint( $black, 95% );
+  font-size: 1rem;
+
+  &:hover,
+  &:focus {
+    background: $white;
+  }
+
+}
+
+button {
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    font-weight: bold;
+  }
+}
+
+input {
+  width: 15rem;
+}
+
+textarea {
+  width: 30rem;
+  min-height: 5rem;
+}

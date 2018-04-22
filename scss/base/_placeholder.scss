@@ -43,11 +43,12 @@
   padding: 0.25rem 0.5rem;
   border: 0.1rem solid $yellow;
   border-radius: 0.5rem;
+  background-color: $blue;
 
   &:hover,
   &:focus {
     border: 0.1rem solid $white;
-    background: $red;
+    background-color: $red;
     color: $white;
   }
 

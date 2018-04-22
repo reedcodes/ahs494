@@ -52,18 +52,19 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
   padding: 0.25rem 0.5rem;
   border: 0.1rem solid #ffdc00;
   border-radius: 0.5rem;
+  background-color: #001f3f;
 }
-/* line 47, ../scss/base/_placeholder.scss */
+/* line 48, ../scss/base/_placeholder.scss */
 .btn-skip:hover, #main-menu .main-menu a:hover, footer ul a:hover, .btn:hover, .btn-skip:focus, #main-menu .main-menu a:focus, footer ul a:focus, .btn:focus {
   border: 0.1rem solid #fff;
-  background: #5c0819;
+  background-color: #5c0819;
   color: #fff;
 }
 
 /**
   * navs and links
   */
-/* line 62, ../scss/base/_placeholder.scss */
+/* line 63, ../scss/base/_placeholder.scss */
 #main-menu .main-menu, footer ul {
   display: -webkit-flex;
   display: flex;
@@ -77,47 +78,52 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
   list-style: none;
 }
 @media (min-width: 576px) {
-  /* line 62, ../scss/base/_placeholder.scss */
+  /* line 63, ../scss/base/_placeholder.scss */
   #main-menu .main-menu, footer ul {
     -webkit-flex-direction: row;
     flex-direction: row;
   }
 }
-/* line 75, ../scss/base/_placeholder.scss */
+/* line 76, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li, footer ul li {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
-/* line 78, ../scss/base/_placeholder.scss */
+/* line 79, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li:last-child, footer ul li:last-child {
   margin-right: 0;
 }
 @media (min-width: 576px) {
-  /* line 75, ../scss/base/_placeholder.scss */
+  /* line 76, ../scss/base/_placeholder.scss */
   #main-menu .main-menu li, footer ul li {
     margin-bottom: 0;
   }
 }
 
 /* line 1, ../scss/base/_global.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, ../scss/base/_global.scss */
 body {
   background: #fff;
   color: #000;
 }
 
-/* line 8, ../scss/base/_global.scss */
+/* line 14, ../scss/base/_global.scss */
 img {
   max-width: 100%;
 }
 
-/* line 22, ../scss/base/_global.scss */
+/* line 28, ../scss/base/_global.scss */
 .pull-left {
   float: left;
   margin-right: 2rem;
   margin-bottom: 1rem;
 }
 
-/* line 23, ../scss/base/_global.scss */
+/* line 29, ../scss/base/_global.scss */
 .pull-right {
   float: right;
   margin-left: 2rem;
@@ -405,6 +411,49 @@ footer {
 /* line 6, ../scss/component/_button.scss */
 .btn-close {
   float: right;
+}
+
+/* line 1, ../scss/component/_form.scss */
+label,
+input,
+textarea {
+  display: block;
+}
+
+/* line 7, ../scss/component/_form.scss */
+button,
+input,
+textarea {
+  max-width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #53777a;
+  background: #f2f2f2;
+  font-size: 1rem;
+}
+/* line 17, ../scss/component/_form.scss */
+button:hover, button:focus,
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  background: #fff;
+}
+
+/* line 25, ../scss/component/_form.scss */
+button:hover, button:focus {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+
+/* line 32, ../scss/component/_form.scss */
+input {
+  width: 15rem;
+}
+
+/* line 36, ../scss/component/_form.scss */
+textarea {
+  width: 30rem;
+  min-height: 5rem;
 }
 
 /* line 1, ../scss/component/_image.scss */
