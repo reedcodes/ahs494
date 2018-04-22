@@ -48,13 +48,13 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
   * buttons
   */
 /* line 41, ../scss/base/_placeholder.scss */
-#main-menu .main-menu a, footer ul a, .btn {
+.btn-skip, #main-menu .main-menu a, footer ul a, .btn {
   padding: 0.25rem 0.5rem;
   border: 0.1rem solid #ffdc00;
   border-radius: 0.5rem;
 }
 /* line 47, ../scss/base/_placeholder.scss */
-#main-menu .main-menu a:hover, footer ul a:hover, .btn:hover, #main-menu .main-menu a:focus, footer ul a:focus, .btn:focus {
+.btn-skip:hover, #main-menu .main-menu a:hover, footer ul a:hover, .btn:hover, .btn-skip:focus, #main-menu .main-menu a:focus, footer ul a:focus, .btn:focus {
   border: 0.1rem solid #fff;
   background: #5c0819;
   color: #fff;
@@ -221,15 +221,14 @@ td {
 .btn-skip {
   z-index: 1;
 }
-/* line 9, ../scss/base/_utility.scss */
+/* line 10, ../scss/base/_utility.scss */
 .btn-skip:hover, .btn-skip:focus {
   width: auto;
   height: auto;
   clip: auto;
-  border: 0.25rem solid #001f3f;
-  background: #ff851b;
+  border-color: #001f3f;
+  background-color: #ff851b;
   color: #001f3f;
-  font-size: 2rem;
 }
 
 /**

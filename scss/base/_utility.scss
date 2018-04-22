@@ -6,15 +6,15 @@
 
   @extend %sr-only;
   z-index: 1;
+  @extend %button;
   &:hover,
   &:focus {
     width: auto;
     height: auto;
     clip: auto;
-    border: 0.25rem solid $blue;
-    background: $orange;
+    border-color: $blue;
+    background-color: $orange;
     color: $blue;
-    font-size: 2rem;
   }
 
 }
