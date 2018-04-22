@@ -417,7 +417,7 @@ footer {
 }
 
 /* line 1, ../scss/component/_table.scss */
-table,
+tr,
 th,
 td {
   border: 1px solid #001f3f;
@@ -464,8 +464,9 @@ tr:nth-of-type(even) {
   .rates th,
   .rates td {
     display: block;
+    border: 0;
   }
-  /* line 50, ../scss/component/_table.scss */
+  /* line 51, ../scss/component/_table.scss */
   .rates th::before,
   .rates td::before {
     content: attr(data-label);

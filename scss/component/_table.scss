@@ -1,4 +1,4 @@
-table,
+tr,
 th,
 td {
   border: 1px solid $blue;
@@ -47,6 +47,7 @@ tr:nth-of-type(even) {
     th,
     td {
       display: block;
+      border: 0;
       &::before {
         content: attr(data-label);
         display: block;
