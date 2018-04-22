@@ -33,6 +33,7 @@ h2 { font-size: 1.44rem;  line-height: 1; }
 h3 { font-size: 1.2rem;   line-height: 1.1667; }
 h4 { font-size: 1rem; }
 
+// for tablet screens and up
 @include breakpoint($md) {
   h1 { font-size: 2.369rem; line-height: 1.182; }
   h2 { font-size: 1.777rem; line-height: 1.576; }

@@ -84,17 +84,17 @@ nav a:hover, footer a:hover, nav a:focus, footer a:focus {
     flex-direction: row;
   }
 }
-/* line 76, ../scss/base/_placeholder.scss */
+/* line 77, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li, footer ul li {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
-/* line 79, ../scss/base/_placeholder.scss */
+/* line 80, ../scss/base/_placeholder.scss */
 #main-menu .main-menu li:last-child, footer ul li:last-child {
   margin-right: 0;
 }
 @media (min-width: 576px) {
-  /* line 76, ../scss/base/_placeholder.scss */
+  /* line 77, ../scss/base/_placeholder.scss */
   #main-menu .main-menu li, footer ul li {
     margin-bottom: 0;
   }
@@ -183,19 +183,19 @@ h4 {
 }
 
 @media (min-width: 768px) {
-  /* line 37, ../scss/base/_typography.scss */
+  /* line 38, ../scss/base/_typography.scss */
   h1 {
     font-size: 2.369rem;
     line-height: 1.182;
   }
 
-  /* line 38, ../scss/base/_typography.scss */
+  /* line 39, ../scss/base/_typography.scss */
   h2 {
     font-size: 1.777rem;
     line-height: 1.576;
   }
 
-  /* line 39, ../scss/base/_typography.scss */
+  /* line 40, ../scss/base/_typography.scss */
   h3 {
     font-size: 1.333rem;
     line-height: 1.05;
@@ -204,7 +204,7 @@ h4 {
 /**
   * text blocks
   */
-/* line 48, ../scss/base/_typography.scss */
+/* line 49, ../scss/base/_typography.scss */
 p,
 ol,
 ul,
@@ -212,7 +212,7 @@ table {
   margin-bottom: 1rem;
 }
 
-/* line 55, ../scss/base/_typography.scss */
+/* line 56, ../scss/base/_typography.scss */
 p,
 li,
 th,
@@ -253,7 +253,7 @@ td {
 }
 
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 38, ../scss/base/_utility.scss */
+  /* line 39, ../scss/base/_utility.scss */
   .rates thead {
     position: absolute !important;
     overflow: hidden;
@@ -328,12 +328,12 @@ nav {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
-  /* line 37, ../scss/layout/_nav.scss */
+  /* line 38, ../scss/layout/_nav.scss */
   #main-menu .main-menu {
     display: -webkit-flex;
     display: flex;
   }
-  /* line 40, ../scss/layout/_nav.scss */
+  /* line 41, ../scss/layout/_nav.scss */
   #main-menu .btn-menu {
     display: none;
   }
@@ -342,7 +342,7 @@ nav {
 /**
   * mobile nav
   */
-/* line 53, ../scss/layout/_nav.scss */
+/* line 54, ../scss/layout/_nav.scss */
 #mobile-menu {
   display: inherit;
   clear: both;
@@ -350,13 +350,13 @@ nav {
   padding-bottom: 25rem;
 }
 @media (min-width: 768px) {
-  /* line 53, ../scss/layout/_nav.scss */
+  /* line 54, ../scss/layout/_nav.scss */
   #mobile-menu {
     display: none;
   }
 }
 
-/* line 66, ../scss/layout/_nav.scss */
+/* line 68, ../scss/layout/_nav.scss */
 .mobile-menu {
   margin-top: 2.5rem;
   margin-right: -1.25rem;
@@ -365,17 +365,17 @@ nav {
   border-top: 0.125rem solid #ffdc00;
   list-style: none;
 }
-/* line 75, ../scss/layout/_nav.scss */
+/* line 77, ../scss/layout/_nav.scss */
 .mobile-menu li {
   border-bottom: 0.125rem solid #ffdc00;
 }
-/* line 79, ../scss/layout/_nav.scss */
+/* line 81, ../scss/layout/_nav.scss */
 .mobile-menu a {
   display: block;
   padding: 0.75rem 1.25rem;
   border: 0;
 }
-/* line 85, ../scss/layout/_nav.scss */
+/* line 87, ../scss/layout/_nav.scss */
 .mobile-menu a:hover, .mobile-menu a:focus {
   background-color: #5c0819;
 }
@@ -509,13 +509,13 @@ tr:nth-of-type(even) {
   * Rates table
   */
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 47, ../scss/component/_table.scss */
+  /* line 49, ../scss/component/_table.scss */
   .rates th,
   .rates td {
     display: block;
     border: 0;
   }
-  /* line 51, ../scss/component/_table.scss */
+  /* line 53, ../scss/component/_table.scss */
   .rates th::before,
   .rates td::before {
     content: attr(data-label);

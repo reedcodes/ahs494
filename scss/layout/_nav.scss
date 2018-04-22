@@ -33,6 +33,7 @@ nav {
 
   }
 
+  // for tablet screens and up
   @include breakpoint($md) {
     .main-menu {
       @include display-flex;
@@ -57,6 +58,7 @@ nav {
   margin-top: 25rem;
   padding-bottom: 25rem;
 
+  // for tablet screens and up
   @include breakpoint($md) {
     display: none;
   }

@@ -35,6 +35,7 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+// only hidden for mobile and small screens
 %sr-mobile {
   @include breakpoint($xs $md) {
     position: absolute !important;

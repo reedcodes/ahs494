@@ -69,6 +69,7 @@
   padding-left: 0;
   list-style: none;
 
+  // for large mobile screens and up
   @include breakpoint($sm) {
     @include flex-direction(row);
   }
@@ -80,6 +81,7 @@
       margin-right: 0;
     }
 
+    // for large mobile screens and up
     @include breakpoint($sm) {
       margin-bottom: 0;
     }

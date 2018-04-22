@@ -38,10 +38,12 @@ tr:nth-of-type(even) {
 
 .rates {
 
+  // only hide on mobile and small screens
   thead {
     @extend %sr-mobile;
   }
 
+  // for mobile, small screens and down
   @include breakpoint($xs $md) {
 
     th,
