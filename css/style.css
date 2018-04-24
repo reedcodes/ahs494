@@ -233,7 +233,7 @@ td {
   height: auto;
   clip: auto;
   border-color: #001f3f;
-  background-color: #ff851b;
+  background-color: #ff8a1f;
   color: #001f3f;
 }
 
@@ -491,7 +491,7 @@ th {
 
 /* line 21, ../scss/component/_table.scss */
 thead th {
-  background: #ff851b;
+  background: #ff8a1f;
   font-size: 1.33rem;
 }
 
@@ -502,7 +502,7 @@ tr {
 
 /* line 29, ../scss/component/_table.scss */
 tr:nth-of-type(even) {
-  background: #fff3e8;
+  background: #fff3e9;
 }
 
 /**
