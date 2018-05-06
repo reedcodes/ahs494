@@ -456,6 +456,25 @@ textarea {
   min-height: 5rem;
 }
 
+/* line 45, ../scss/component/_form.scss */
+[aria-invalid="true"] {
+  border-color: #5c0819;
+  box-shadow: 0 0 0.25rem #5c0819;
+}
+
+/* line 50, ../scss/component/_form.scss */
+.errmsg {
+  width: 30rem;
+  max-width: 100%;
+}
+/* line 53, ../scss/component/_form.scss */
+.errmsg p {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #5c0819;
+  color: #fff;
+}
+
 /* line 1, ../scss/component/_image.scss */
 .profile {
   display: block;

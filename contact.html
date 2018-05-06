@@ -56,16 +56,19 @@
 
       <p>
         <label for="contact-name">Name</label>
-        <input name="contact-name" id="contact-name" placeholder="J Smith" type="text">
+        <input name="contact-name" id="contact-name" placeholder="J Smith" type="text" aria-required="true" required data-errmsg="You must enter your name.">
       </p>
+      <div role="alert" class="errmsg" id="contact-name-err"></div>
       <p>
         <label for="contact-email">Email</label>
-        <input name="contact-email" id="contact-email" placeholder="j.smith@example.com" type="email">
+        <input name="contact-email" id="contact-email" placeholder="j.smith@example.com" type="email" aria-required="true" required data-errmsg="You must enter a valid email address.">
       </p>
+      <div role="alert" class="errmsg" id="contact-email-err"></div>
       <p>
         <label for="contact-subject">Subject</label>
-        <input name="contact-subject" id="contact-subject" placeholder="My topic" type="text">
+        <input name="contact-subject" id="contact-subject" placeholder="My topic" type="text" aria-required="true" required data-errmsg="You must enter a message subject.">
       </p>
+      <div role="alert" class="errmsg" id="contact-subject-err"></div>
       <p>
         <label for="contact-message">Type in the details of your communication.</label>
         <textarea name="contact-message" id="contact-message"></textarea>
@@ -103,6 +106,17 @@
 </nav>
 
 
+
+<script src="js/validate.js"></script>
+<script>
+$( "input[required]" )
+.keyup(function() {
+  validateField(event);
+})
+.blur(function() {
+  validateField(event);
+});
+</script>
 
 </body>
 </html>

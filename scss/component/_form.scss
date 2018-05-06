@@ -37,3 +37,23 @@ textarea {
   width: 30rem;
   min-height: 5rem;
 }
+
+
+
+
+
+[aria-invalid="true"] {
+  border-color:  $red;
+  box-shadow: 0 0 0.25rem $red;
+}
+
+.errmsg {
+  width: 30rem;
+  max-width: 100%;
+  p {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: $red;
+    color: $white;
+  }
+}
